@@ -1,5 +1,4 @@
-<?php require 'inc/head.php';
-session_start();?>
+<?php require 'inc/head.php';?>
 <section class="cookies container-fluid">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">

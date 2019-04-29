@@ -1,5 +1,5 @@
-<?php require 'inc/head.php'; ?>
-<?php session_start();
+<?php require 'inc/head.php';
+
 if (isset($_SESSION['name'])){
 	header('location:/index.php');
 }elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {

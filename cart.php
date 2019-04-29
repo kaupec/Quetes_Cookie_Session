@@ -1,5 +1,4 @@
 <?php require 'inc/head.php';
-session_start();
 if (empty($_SESSION)){
     header('location:../login.php');
 }elseif ( empty($_SESSION['panier'])) {
