@@ -44,7 +44,7 @@ session_start();?>
         <figcaption class="caption">
           <h3>M&M's&copy; cookies</h3>
           <p>Cooked by Penny !</p>
-          <a  href="/add.phpadd?add_to_cart=32" class="btn btn-primary">
+          <a  href="/add.php?add_to_cart=32" class="btn btn-primary">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add to cart
           </a>
         </figcaption>

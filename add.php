@@ -10,7 +10,7 @@
 	header('location:/login.php');
 }else {
 	    $_SESSION['panier'][]=[$_GET['add_to_cart']];
-	    header('location:/cart.php');
+	    header('location:/index.php');
 	    }
 	
 ?>

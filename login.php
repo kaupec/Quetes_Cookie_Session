@@ -2,8 +2,11 @@
 <?php session_start();
 if (isset($_SESSION['name'])){
 	header('location:/index.php');
-}else {
-$_SESSION['name']=$_POST['loginname'];
+}elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	$_SESSION['name'] = $_POST['loginName'];
+	header('Location:/index.php');
+}else{
+
 ?>
 <div class="container" style="margin-top:40px">
 <div class="row">
@@ -13,7 +16,7 @@ $_SESSION['name']=$_POST['loginname'];
         <strong> Sign in to continue</strong>
       </div>
       <div class="panel-body">
-        <form role="form" action="index.php" method="POST">
+        <form role="form" action="" method="POST">
           <fieldset>
             <div class="row">
               <div class="center-block">
@@ -28,7 +31,7 @@ $_SESSION['name']=$_POST['loginname'];
                     <span class="input-group-addon">
                       <i class="glyphicon glyphicon-user"></i>
                     </span>
-                    <input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+                    <input class="form-control" placeholder="Username" name="loginName" type="text" autofocus>
                   </div>
                 </div>
                 <div class="form-group">
