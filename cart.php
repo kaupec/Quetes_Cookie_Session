@@ -1,5 +1,5 @@
 <?php require 'inc/head.php';
-if (empty($_SESSION)){
+if (!(isset($_SESSION['name']))){
     header('location:../login.php');
 }elseif ( empty($_SESSION['panier'])) {
 	echo 'Votre Panier est vide';
